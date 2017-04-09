@@ -1,0 +1,1 @@
+var routes=function(e){e.get("/",function(e,n){n.sendfile("views/index.html"),console.log("Received GET")}),e.get("/js/:name",function(e,n){var o=e.params.name;n.sendfile("js/"+o),console.log("Received GET at js/"+o)})};module.exports=routes;

@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>Dungeon Solitaire</title>
+
+    <style type="text/css">
+      .contentContainer {
+        display: none;
+      }
+
+      .contentContainer:target {
+        display: block;
+      }
+
+      #currentActions button {
+        display: none;
+      }
+      #currentActions button.visible {
+        display: block;
+      }
+
+      .levelIndicator-levels {
+        display: inline;
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="intro" class="contentContainer">
+      <h1>
+        Welcome to Dungeon Solitaire!
+      </h1>
+      <article>
+        <p>
+          In Dungeon Solitaire, you play a dungeon explorer searching through the Tomb of the Four Kings. As you delve through level after level, you'll encounter traps, monsters and sealed doors that will block your ability to loot the treasures within. Go as deep as you dare, but remember that every level you go down is another level you'll have to come back up in order to escape with your life - and treasures - in tow.
+        </p>
+        <p>
+          Along the way you'll also discover spells to aid you, and you may even curry the favor of the goddesses. But be warned, if your four torches go out or your health is reduced to 0, you'll be lost in the tomb forever.
+        </p>
+        <p>
+          This game is a digital reproduction of the game <em>Dungeon Solitaire: Tomb of Four Kings</em> created by <a href="https://matthewlowes.com/games/">Matthew Lowes</a>.
+        </p>
+      </article>
+      <button id="newGameButton">New Game</button>
+    </section>
+    
+    <section id="game" class="contentContainer">
+      <header id="levelIndicator">
+        <h1>Your place in the dungeon</h1>
+        <ol class="levelIndicator-levels"></ol>
+        <h1>You have <span id="game-healthPoints">9</span> health points left.</h1>
+        <h1>You have <span id="game-torches">4</span> torches still lit.</h1>
+      </header>
+      <h2>Score: <span id="numberOfTreasures">0 Treasures</span> / <span id="numberOfKings">0 Kings</span> / <span id="totalScore">0</span> Total Points</h2>
+      <article id="level">
+        <aside id="level-cards">
+          <h2>Cards in this level:</h2>
+          <ul></ul>
+        </aside>
+        <main id="currentCard">
+          <h2>You have drawn a <span id="currentCard-name"></span></h2>
+          <h2 id="currentEncounter"></h2>
+          <div id="currentActions">
+            <button id="useASpell">Use a Spell</button>
+            <button id="dropATreasure">Drop a Treasure</button>
+            <button id="drawACard">Draw a Card</button>
+            <button id="goDownALevel">Go Down a Level</button>
+            <button id="goUpALevel">Go Up a Level</button>
+            <button id="newGame">New Game</button>
+          </div>
+        </main>
+      </article>
+    </section>
+
+    <script src="/assets/js/master.min.js"></script>
+  </body>
+</html>

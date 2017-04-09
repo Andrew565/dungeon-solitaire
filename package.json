@@ -1,0 +1,25 @@
+{
+  "name": "dungeon-solitaire",
+  "version": "0.0.1",
+  "description": "Dungeon Solitaire, based on the game by Matthew Lowes.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.12.4",
+    "body-parser": "1.14.2"
+  },
+  "engines": {
+    "node": "4.4.5"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "api"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^2.2.1"
+  }
+}
