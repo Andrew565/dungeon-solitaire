@@ -20,6 +20,6 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "webpack": "^2.2.1"
+    "webpack": "^2.6.1"
   }
 }
