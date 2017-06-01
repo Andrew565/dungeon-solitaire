@@ -1,1 +1,1 @@
-Readme coming soon.
+Dungeon Solitaire - Tomb of the Four Kings. Based on the game by Matthew Lowes, created with permission.
