@@ -1,0 +1,22 @@
+.contentContainer {
+  display: none;
+
+  &:target {
+    display: block;
+  }
+}
+
+#currentActions {
+  button {
+    display: none;
+
+    &.visible {
+      display: block;
+    }
+  }
+}
+
+.levelIndicator-levels {
+  display: inline;
+  list-style-type: none;
+}
