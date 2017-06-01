@@ -2,6 +2,7 @@
   "name": "dungeon-solitaire",
   "version": "0.0.1",
   "description": "Dungeon Solitaire, based on the game by Matthew Lowes.",
+  "repository": "https://github.com/Andrew565/dungeon-solitaire",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
